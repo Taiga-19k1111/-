@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "こっちそっちあっちどっじ.sln"
+    "dotnet.defaultSolution": "Kocchi-Socchi-Acchi-Dodge.sln"
 }
