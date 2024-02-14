@@ -1,6 +1,6 @@
 実装機能
 
-ープレイヤーの移動(プッシュ中)
+ープレイヤーの操作(Assets/Scripts/PlayerScripts.cs)
 
 使用アセット
 
