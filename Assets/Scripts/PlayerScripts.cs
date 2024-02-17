@@ -9,10 +9,11 @@ public class PlayerScript : MonoBehaviour
     CharacterController con;
     Animator anim;
  
-    float normalSpeed = 3f; // 通常時の移動速度
-    float sprintSpeed = 9f; // ダッシュ時の移動速度
-    float jump = 8f;        // ジャンプ力
-    float gravity = 10f;    // 重力の大きさ
+    private float normalSpeed = 3f; // 通常時の移動速度
+    private float sprintSpeed = 9f; // ダッシュ時の移動速度
+    private float jump = 8f;        // ジャンプ力
+    private float gravity = 10f;    // 重力の大きさ
+    // public Bullet bullet;
  
     Vector3 moveDirection = Vector3.zero;
  
@@ -28,6 +29,8 @@ public class PlayerScript : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
        
         startPos = transform.position;
+
+        // bullet
     }
  
     void Update()
@@ -69,5 +72,11 @@ public class PlayerScript : MonoBehaviour
  
         // Move は指定したベクトルだけ移動させる命令
         con.Move(moveDirection * Time.deltaTime);
+    }
+
+    void Shooting(){
+        if (Input.GetMouseButton(0)){
+
+        }
     }
 }
